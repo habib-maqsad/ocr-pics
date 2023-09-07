@@ -16,4 +16,5 @@ def tesseract_ocr(buffer: FieldStorage):
         return text
 
     except Exception as e:
+        print(e)
         return 'Error: Could not parse image...'
