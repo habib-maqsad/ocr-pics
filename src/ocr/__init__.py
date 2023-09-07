@@ -1,1 +1,1 @@
-from .main import tesseract_request, math_pix_request
+from .main import tesseract_request, mathpix_request

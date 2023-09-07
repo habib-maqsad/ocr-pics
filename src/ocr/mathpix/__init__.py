@@ -1,1 +1,1 @@
-from .main import math_pix_request
+from .main import mathpix_ocr

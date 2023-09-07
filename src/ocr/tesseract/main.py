@@ -4,7 +4,7 @@ from pytesseract import image_to_string, Output
 from PIL import Image
 
 
-def tesseract_request(buffer: FieldStorage):
+def tesseract_ocr(buffer: FieldStorage):
     try:
         image = Image.open(buffer)
         expression = image_to_string(

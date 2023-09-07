@@ -24,7 +24,7 @@ def mathpix_api(buffer: FieldStorage, MATH_PIX_APP_ID: str, MATHPIX_APP_KEY: str
     return response
 
 
-def math_pix_request(buffer: FieldStorage,  app_id: str, app_key: str, url: str):
+def mathpix_ocr(buffer: FieldStorage,  app_id: str, app_key: str, url: str):
     response = mathpix_api(buffer, app_id, app_key, url)
     data = (json.dumps(response.json(), indent=4, sort_keys=True))
     text = json.loads(data)['text']

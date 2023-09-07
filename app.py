@@ -4,7 +4,7 @@ from flask_cors import cross_origin
 import requests
 from http import HTTPStatus
 
-from src.ocr.main import ocr_request
+from src import tesseract_request
 
 
 app = Flask(__name__)
@@ -30,7 +30,7 @@ def tesseract_ocr():
         response.status_code = HTTPStatus.BAD_REQUEST
         return abort(make_response(response))
 
-    return ocr_request(image, 'tesseract')
+    return tesseract_request(image)
 
 
-# app.run(host='localhost', port=8080, debug=True)
+app.run(host='localhost', port=8080, debug=True)
