@@ -16,7 +16,7 @@ def hello_world():
 
 
 @app.route('/hello')
-def hello_world():
+def ok():
     return 'Hello, flasking world!'
 
 
