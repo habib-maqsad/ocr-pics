@@ -15,6 +15,11 @@ def hello_world():
     return 'Hello, world!'
 
 
+@app.route('/hello')
+def hello_world():
+    return 'Hello, flasking world!'
+
+
 @app.post('/tesseract-ocr')
 @cross_origin()
 def tesseract_ocr():
